@@ -1,10 +1,15 @@
-#include "Zombie.Class.hpp"
+#include "Zombie.hpp"
 #include <string>
 
 int main()
 {
-    Zombie  z;
+    Zombie z("Miguel");
+    Zombie *f;
 
-    std::cout << "EYY" << std::endl;
+    z.announce();
+
+    f = newZombie("Johnny");
+    f->announce();
+    delete f;
     return(0);
 }

@@ -1,13 +1,13 @@
-#include "Zombie.Class.hpp"
+#include "Zombie.hpp"
 
-Zombie::Zombie(void)
+Zombie::Zombie(std::string n) : name(n)
 {
     std::cout << "Zombie constructor called" << std::endl;
 }
 
 Zombie::~Zombie(void)
 {
-    std::cout << "Zombie destructor called" << std::endl;
+    std::cout << "Zombie " << name << " destructor called" << std::endl;
 }
 
 void    Zombie::announce(void)
