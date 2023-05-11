@@ -3,10 +3,9 @@
 
 int main()
 {
-    Zombie z("Miguel");
     Zombie *f;
 
-    z.announce();
+    randomChump("Michael");
 
     f = newZombie("Johnny");
     f->announce();
